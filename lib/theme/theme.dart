@@ -11,7 +11,7 @@ class PTheme {
       bodySmall: TextStyle(color: Colors.black),
     ),
   ).copyWith(
-      primaryColor: const Color.fromRGBO(206, 33, 255, 1),
+      primaryColor: Color.fromARGB(255, 41, 156, 244),
       brightness: Brightness.light,
       primaryColorLight: Colors.white,
       indicatorColor: Colors.grey[100],

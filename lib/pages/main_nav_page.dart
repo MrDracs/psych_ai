@@ -3,7 +3,6 @@ import 'package:ionicons/ionicons.dart';
 import 'package:psych_ai/pages/chat_screen.dart';
 import 'package:psych_ai/pages/habit_tracker.dart';
 import 'package:psych_ai/pages/home_page.dart';
-import 'package:psych_ai/pages/new_page.dart';
 import 'package:psych_ai/pages/profile_page.dart';
 
 import '../widgets/my_app_bar.dart';
@@ -20,8 +19,7 @@ class _MainPageState extends State<MainPage> {
     const HomePage(),
     const ChatScreen(),
     const HabitTracker(),
-    ProfilePage(),
-    const NewPage(),
+    ProfilePage()
   ];
   void signUserOut() {}
 

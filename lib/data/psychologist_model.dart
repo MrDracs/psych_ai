@@ -29,18 +29,4 @@ final List<DoctorModel> expertCounsellors = [
     totalReviews: 256,
     profile: "assets/docs/doc2.png",
   ),
-  DoctorModel(
-    name: "Sophia Roberts",
-    position: "Counseling Psychologist",
-    averageReview: 4,
-    totalReviews: 130,
-    profile: "assets/docs/doc3.png",
-  ),
-  DoctorModel(
-    name: "Alexander Mitchell",
-    position: "Health Psychologist",
-    averageReview: 5,
-    totalReviews: 350,
-    profile: "assets/docs/doc4.png",
-  )
 ];

@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
           const UpcomingCard(),
           const SizedBox(height: 20),
           Text(
-            "Recommended Psychologists",
+            "Contact Your Doctor",
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 15),

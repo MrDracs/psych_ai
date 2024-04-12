@@ -7,15 +7,16 @@ class ExpertCounsellors extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       children: List.generate(expertCounsellors.length, (index) {
         return Padding(
-          padding: const EdgeInsets.only(bottom: 18),
-          child: Row(
+          padding: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width / 30),
+          child: Column(
             children: [
               Container(
-                width: 100,
-                height: 100,
+                width: 150,
+                height: 150,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
@@ -24,35 +25,17 @@ class ExpertCounsellors extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(width: 10),
               Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
                     "Dr. ${expertCounsellors[index].name}",
                     style: const TextStyle(
                         fontSize: 16, fontWeight: FontWeight.bold),
                   ),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: 2),
                   Text(expertCounsellors[index].position),
                   const SizedBox(height: 16),
-                  Row(
-                    children: [
-                      Icon(
-                        Ionicons.star,
-                        color: Colors.yellow[700],
-                        size: 18,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 4, right: 6),
-                        child: Text(
-                          "${expertCounsellors[index].averageReview}",
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                      Text("${expertCounsellors[index].totalReviews} Reviews")
-                    ],
-                  )
                 ],
               )
             ],
